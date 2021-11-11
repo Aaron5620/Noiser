@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noiser</title>
+    <style>
+        .dB{
+            float: left;
+        }
+        .Result{
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="dB">
+            <h1>현재 소음(dB) : </h1>
+        </div>
+        <div class="Result">
+            <h1>123</h1>
+        </div>
+        <fieldset style="clear: left;">
+            <legend>소음 기준 및 지속 시간 설정</legend>
+            <ul style="list-style-type: none;">
+                <li>
+                     <label for="">소음 기준(dB)</label>
+                    <input type="number" min="50" max="150" placeholder="50~150" value="70">
+                    
+                </li> 
+                <li>
+                    <label for="">지속 시간(sec)</label>
+                    <input type="number" min="0" max="10" placeholder="0~10" value="3">
+                </li>
+            </ul>
+        </fieldset>
+        <br>
+        <fieldset >
+            <legend>ON / OFF 설정</legend>
+            <ul style="list-style-type: none;">
+                <li>
+                    <label for="">노이저</label>
+                    <br>
+                    <input type="button" value="ON">
+                    <input type="button" value="OFF">
+                </li>
+                <br>
+                <li>
+                    <label for="">스피커</label>
+                    <br>
+                    <input type="button" value="ON">
+                    <input type="button" value="OFF">
+                </li>
+                <br>
+                <li>
+                    <label for="">LED</label>
+                    <br>
+                    <input type="button" value="ON">
+                    <input type="button" value="OFF">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+
+</html>
